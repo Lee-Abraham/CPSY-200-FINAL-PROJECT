@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{9F79E5D1-7A3C-462F-BDD0-09179F581693}|Management\\Management.csproj|solutionrelative:management\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9F79E5D1-7A3C-462F-BDD0-09179F581693}|Management\\Management.csproj|C:\\Users\\Random-123\\OneDrive\\Documents\\GitHub\\CPSY-200-FINAL-PROJECT\\Management\\management\\customerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F79E5D1-7A3C-462F-BDD0-09179F581693}|Management\\Management.csproj|solutionrelative:management\\customerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9F79E5D1-7A3C-462F-BDD0-09179F581693}|Management\\Management.csproj|C:\\Users\\Random-123\\OneDrive\\Documents\\GitHub\\CPSY-200-FINAL-PROJECT\\Management\\management\\customerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9F79E5D1-7A3C-462F-BDD0-09179F581693}|Management\\Management.csproj|solutionrelative:management\\customerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F79E5D1-7A3C-462F-BDD0-09179F581693}|Management\\Management.csproj|C:\\Users\\Random-123\\OneDrive\\Documents\\GitHub\\CPSY-200-FINAL-PROJECT\\Management\\management\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F79E5D1-7A3C-462F-BDD0-09179F581693}|Management\\Management.csproj|solutionrelative:management\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F79E5D1-7A3C-462F-BDD0-09179F581693}|Management\\Management.csproj|C:\\Users\\Random-123\\OneDrive\\Documents\\GitHub\\CPSY-200-FINAL-PROJECT\\Management\\management\\customerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F79E5D1-7A3C-462F-BDD0-09179F581693}|Management\\Management.csproj|solutionrelative:management\\customerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "CustomerForm.cs",
               "DocumentMoniker": "C:\\Users\\Random-123\\OneDrive\\Documents\\GitHub\\CPSY-200-FINAL-PROJECT\\Management\\Management\\CustomerForm.cs",
               "RelativeDocumentMoniker": "Management\\CustomerForm.cs",
@@ -42,28 +42,30 @@
               "RelativeToolTip": "Management\\CustomerForm.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAAACsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T18:16:53.915Z"
+              "WhenOpened": "2025-04-02T18:16:53.915Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CustomerForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Random-123\\OneDrive\\Documents\\GitHub\\CPSY-200-FINAL-PROJECT\\Management\\Management\\CustomerForm.cs",
               "RelativeDocumentMoniker": "Management\\CustomerForm.cs",
               "ToolTip": "C:\\Users\\Random-123\\OneDrive\\Documents\\GitHub\\CPSY-200-FINAL-PROJECT\\Management\\Management\\CustomerForm.cs [Design]",
               "RelativeToolTip": "Management\\CustomerForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T17:56:20.77Z"
+              "WhenOpened": "2025-04-02T17:56:20.77Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Home.cs",
               "DocumentMoniker": "C:\\Users\\Random-123\\OneDrive\\Documents\\GitHub\\CPSY-200-FINAL-PROJECT\\Management\\Management\\Home.cs",
               "RelativeDocumentMoniker": "Management\\Home.cs",
               "ToolTip": "C:\\Users\\Random-123\\OneDrive\\Documents\\GitHub\\CPSY-200-FINAL-PROJECT\\Management\\Management\\Home.cs",
               "RelativeToolTip": "Management\\Home.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAIA3wBYAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAawBYAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-02T17:49:48.443Z",
               "EditorCaption": ""
