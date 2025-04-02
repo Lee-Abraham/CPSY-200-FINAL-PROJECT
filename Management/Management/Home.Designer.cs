@@ -46,7 +46,7 @@
             // buttCustomer
             // 
             this.buttCustomer.BackColor = System.Drawing.Color.White;
-            this.buttCustomer.Location = new System.Drawing.Point(307, 140);
+            this.buttCustomer.Location = new System.Drawing.Point(307, 149);
             this.buttCustomer.Margin = new System.Windows.Forms.Padding(2);
             this.buttCustomer.Name = "buttCustomer";
             this.buttCustomer.Size = new System.Drawing.Size(136, 30);
@@ -110,16 +110,19 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(144, 434);
+            this.pictureBox3.Image = global::Management.Properties.Resources.renting;
+            this.pictureBox3.Location = new System.Drawing.Point(90, 388);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox3.Size = new System.Drawing.Size(127, 122);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Management.Properties.Resources.equipment;
-            this.pictureBox2.Location = new System.Drawing.Point(144, 251);
+            this.pictureBox2.Location = new System.Drawing.Point(90, 247);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(127, 122);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -131,7 +134,7 @@
             // 
             this.pictureBox1.Image = global::Management.Properties.Resources.profile;
             this.pictureBox1.ImageLocation = "";
-            this.pictureBox1.Location = new System.Drawing.Point(144, 101);
+            this.pictureBox1.Location = new System.Drawing.Point(90, 99);
             this.pictureBox1.MinimumSize = new System.Drawing.Size(100, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(127, 122);

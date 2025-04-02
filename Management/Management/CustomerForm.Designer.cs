@@ -32,6 +32,7 @@
             this.addCustomer = new System.Windows.Forms.Button();
             this.editCustomer = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.userName = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,6 +66,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.userName);
             this.panel1.Controls.Add(this.addCustomer);
             this.panel1.Controls.Add(this.Home);
             this.panel1.Location = new System.Drawing.Point(-8, -30);
@@ -72,6 +74,15 @@
             this.panel1.Size = new System.Drawing.Size(414, 489);
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // userName
+            // 
+            this.userName.AutoSize = true;
+            this.userName.Location = new System.Drawing.Point(59, 113);
+            this.userName.Name = "userName";
+            this.userName.Size = new System.Drawing.Size(61, 13);
+            this.userName.TabIndex = 2;
+            this.userName.Text = "User name:";
             // 
             // CustomerForm
             // 
@@ -83,6 +94,7 @@
             this.Name = "CustomerForm";
             this.Text = "CustomerForm";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -93,5 +105,6 @@
         private System.Windows.Forms.Button addCustomer;
         private System.Windows.Forms.Button editCustomer;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label userName;
     }
 }

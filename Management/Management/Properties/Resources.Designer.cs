@@ -93,6 +93,16 @@ namespace Management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap renting {
+            get {
+                object obj = ResourceManager.GetObject("renting", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Sprite_0001 {
             get {
                 object obj = ResourceManager.GetObject("Sprite-0001", resourceCulture);

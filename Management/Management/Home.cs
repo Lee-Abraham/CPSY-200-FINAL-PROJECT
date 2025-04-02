@@ -19,8 +19,11 @@ namespace Management
             //Set location of user profile.
             pictureBox1.ImageLocation = @"picture\profile.png";
 
-            //Set location of user profile.
+            //Set location of equipment.
             pictureBox2.ImageLocation = @"picture\equipment.png";
+
+            //Set location of renting.
+            pictureBox3.ImageLocation = @"picture\renting.png";
 
             //Set location of animation.
             pictureBox4.ImageLocation = @"picture\anim.gif";
@@ -83,6 +86,11 @@ namespace Management
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
 
         }
