@@ -15,6 +15,16 @@ namespace Management
         public Home()
         {
             InitializeComponent();
+
+            //Set location of user profile.
+            pictureBox1.ImageLocation = @"picture\profile.png";
+
+            //Set location of user profile.
+            pictureBox2.ImageLocation = @"picture\equipment.png";
+
+            //Set location of animation.
+            pictureBox4.ImageLocation = @"picture\anim.gif";
+
         }
 
         //Button for the Customer
@@ -59,6 +69,20 @@ namespace Management
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
 
         }

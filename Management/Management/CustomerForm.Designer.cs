@@ -31,11 +31,13 @@
             this.Home = new System.Windows.Forms.Button();
             this.addCustomer = new System.Windows.Forms.Button();
             this.editCustomer = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Home
             // 
-            this.Home.Location = new System.Drawing.Point(12, 22);
+            this.Home.Location = new System.Drawing.Point(20, 42);
             this.Home.Name = "Home";
             this.Home.Size = new System.Drawing.Size(75, 23);
             this.Home.TabIndex = 0;
@@ -45,7 +47,7 @@
             // 
             // addCustomer
             // 
-            this.addCustomer.Location = new System.Drawing.Point(210, 357);
+            this.addCustomer.Location = new System.Drawing.Point(149, 426);
             this.addCustomer.Name = "addCustomer";
             this.addCustomer.Size = new System.Drawing.Size(105, 42);
             this.addCustomer.TabIndex = 1;
@@ -54,12 +56,22 @@
             // 
             // editCustomer
             // 
-            this.editCustomer.Location = new System.Drawing.Point(454, 357);
+            this.editCustomer.Location = new System.Drawing.Point(545, 396);
             this.editCustomer.Name = "editCustomer";
             this.editCustomer.Size = new System.Drawing.Size(105, 42);
             this.editCustomer.TabIndex = 2;
             this.editCustomer.Text = "Edit customer data";
             this.editCustomer.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.addCustomer);
+            this.panel1.Controls.Add(this.Home);
+            this.panel1.Location = new System.Drawing.Point(-8, -30);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(414, 489);
+            this.panel1.TabIndex = 3;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // CustomerForm
             // 
@@ -67,10 +79,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.editCustomer);
-            this.Controls.Add(this.addCustomer);
-            this.Controls.Add(this.Home);
+            this.Controls.Add(this.panel1);
             this.Name = "CustomerForm";
             this.Text = "CustomerForm";
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -80,5 +92,6 @@
         private System.Windows.Forms.Button Home;
         private System.Windows.Forms.Button addCustomer;
         private System.Windows.Forms.Button editCustomer;
+        private System.Windows.Forms.Panel panel1;
     }
 }
