@@ -65,7 +65,7 @@
             // 
             // addCustomer
             // 
-            this.addCustomer.Location = new System.Drawing.Point(149, 320);
+            this.addCustomer.Location = new System.Drawing.Point(158, 354);
             this.addCustomer.Name = "addCustomer";
             this.addCustomer.Size = new System.Drawing.Size(105, 42);
             this.addCustomer.TabIndex = 1;
@@ -81,6 +81,7 @@
             this.editCustomer.TabIndex = 2;
             this.editCustomer.Text = "Edit customer data";
             this.editCustomer.UseVisualStyleBackColor = true;
+            this.editCustomer.Click += new System.EventHandler(this.editCustomer_Click);
             // 
             // panel1
             // 
@@ -102,14 +103,14 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(116, 281);
+            this.textBox4.Location = new System.Drawing.Point(125, 315);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(179, 20);
             this.textBox4.TabIndex = 9;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(116, 227);
+            this.textBox3.Location = new System.Drawing.Point(125, 261);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(179, 20);
             this.textBox3.TabIndex = 8;
@@ -117,14 +118,14 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(116, 174);
+            this.textBox2.Location = new System.Drawing.Point(125, 208);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 7;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(116, 149);
+            this.textBox1.Location = new System.Drawing.Point(125, 183);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 6;
@@ -133,7 +134,7 @@
             // email
             // 
             this.email.AutoSize = true;
-            this.email.Location = new System.Drawing.Point(75, 288);
+            this.email.Location = new System.Drawing.Point(84, 322);
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(35, 13);
             this.email.TabIndex = 5;
@@ -142,7 +143,7 @@
             // phone
             // 
             this.phone.AutoSize = true;
-            this.phone.Location = new System.Drawing.Point(58, 230);
+            this.phone.Location = new System.Drawing.Point(67, 264);
             this.phone.Name = "phone";
             this.phone.Size = new System.Drawing.Size(47, 13);
             this.phone.TabIndex = 4;
@@ -151,7 +152,7 @@
             // fName
             // 
             this.fName.AutoSize = true;
-            this.fName.Location = new System.Drawing.Point(50, 177);
+            this.fName.Location = new System.Drawing.Point(59, 211);
             this.fName.Name = "fName";
             this.fName.Size = new System.Drawing.Size(60, 13);
             this.fName.TabIndex = 3;
@@ -160,7 +161,7 @@
             // lName
             // 
             this.lName.AutoSize = true;
-            this.lName.Location = new System.Drawing.Point(49, 152);
+            this.lName.Location = new System.Drawing.Point(58, 186);
             this.lName.Name = "lName";
             this.lName.Size = new System.Drawing.Size(61, 13);
             this.lName.TabIndex = 2;
@@ -231,16 +232,16 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(515, 217);
+            this.textBox6.Location = new System.Drawing.Point(515, 184);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(154, 20);
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
             this.textBox6.TabIndex = 11;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(515, 181);
+            this.textBox7.Location = new System.Drawing.Point(515, 221);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
+            this.textBox7.Size = new System.Drawing.Size(154, 20);
             this.textBox7.TabIndex = 12;
             this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
@@ -270,6 +271,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "CustomerForm";
             this.Text = "CustomerForm";
+            this.Load += new System.EventHandler(this.CustomerForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

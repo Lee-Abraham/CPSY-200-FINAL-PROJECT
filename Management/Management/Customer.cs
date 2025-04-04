@@ -5,22 +5,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Management
 {
     public class Customer
     {
-        int currid = 1000;
+        public int currid = 1000;
         //Customer id
-        int Id { get; set; }
+        public int Id { get; set; }
         //Customer last name
-        string Lname { get; set; }
+        public string Lname { get; set; }
         //Customer first name
-        string Fname { get; set; }
+        public string Fname { get; set; }
         //Customer contact info
-        string Phone {  get; set; }
+        public string Phone {  get; set; }
         //Customer email address.
-        string Email { get; set; }
+        public string Email { get; set; }
 
         public Customer() 
         {
@@ -40,53 +41,44 @@ namespace Management
             Email = email;
         }
 
+        //Format phone number
+        public string FormatPhone(string phone)
+        {
+            string digits = new string(phone.Where(char.IsDigit).ToArray());
+
+            return $"{digits.Substring(0, 3)}-{digits.Substring(3,3)}-{digits.Substring(6, 4)}";
+        }
+
+        //--------------------------------------------------------------------
         //Takes the input and makes it to string
         public override string ToString()
         {
             return $"{Id}, {Lname}, {Fname}, {Phone}, {Email}";
         }
 
+
+        //--------------------------------------------------------------------
         //Check if Id us unique 
         public static int IdUnique(List<Customer> customers)
         {
             int startId = 1000;
-            int currID;
 
             HashSet<int> existID = new HashSet<int>(customers.Select(c => c.Id));
-                //Targets the IDs of the customer.
-            //foreach (var customer in customers)
-            //{
-            //    existID.Add(customer.Id);
-            //}
 
             do 
             {
                 startId += 1;
             }
-            while (startId < 9999 && existID.Contains(startId));
+            while (startId < 99999 && existID.Contains(startId));
             
             return startId;
 
         }
 
-        //Append the data to existing file.
-        public void AppendData(string filepath, List<Customer> customers)
-        {
-            using (StreamWriter w = File.AppendText(filepath))
-            {
-                foreach (var customer in customers)
-                {
-                    w.WriteLine(customer.ToString());
-                }
-            }
-        }
 
-    }
-
-    public class cusData
-    {
-
-        public List<Customer> GetCustomer(string filePath)
+        //--------------------------------------------------------------------
+        //Get customer
+        public static List<Customer> GetCustomer(string filePath)
         {
             List<Customer> customer = new List<Customer>();
 
@@ -118,5 +110,39 @@ namespace Management
 
             return customer;
         }
+
+        //--------------------------------------------------------------------
+        //Append the data to existing file.
+        public void AppendData(string filepath, Customer customers)
+        {
+            using (StreamWriter w = File.AppendText(filepath))
+            {
+
+                w.WriteLine(customers.ToString());
+
+            }
+        }
+
+        //--------------------------------------------------------------------
+        //Edit data
+        public static void OvverData(string filepath, List<Customer> customers)
+        {
+            using (StreamWriter w = new StreamWriter(filepath, false))
+            {
+                foreach (Customer custom in customers)
+                {
+                    w.WriteLine(custom.ToString());
+                }
+            }
+        }
+
+        //--------------------------------------------------------------------
+        public List<int> getCusID(List<Customer> customers)
+        {
+            return new HashSet<int>(customers.Select(c => c.Id)).ToList();
+        }
+
     }
+
+
 }
