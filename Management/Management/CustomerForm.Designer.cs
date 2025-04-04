@@ -32,14 +32,14 @@
             this.addCustomer = new System.Windows.Forms.Button();
             this.editCustomer = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lName = new System.Windows.Forms.Label();
-            this.fName = new System.Windows.Forms.Label();
-            this.phone = new System.Windows.Forms.Label();
-            this.email = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.email = new System.Windows.Forms.Label();
+            this.phone = new System.Windows.Forms.Label();
+            this.fName = new System.Windows.Forms.Label();
+            this.lName = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -65,7 +65,7 @@
             // 
             // addCustomer
             // 
-            this.addCustomer.Location = new System.Drawing.Point(148, 358);
+            this.addCustomer.Location = new System.Drawing.Point(149, 320);
             this.addCustomer.Name = "addCustomer";
             this.addCustomer.Size = new System.Drawing.Size(105, 42);
             this.addCustomer.TabIndex = 1;
@@ -100,33 +100,35 @@
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // lName
+            // textBox4
             // 
-            this.lName.AutoSize = true;
-            this.lName.Location = new System.Drawing.Point(49, 152);
-            this.lName.Name = "lName";
-            this.lName.Size = new System.Drawing.Size(61, 13);
-            this.lName.TabIndex = 2;
-            this.lName.Text = "Last Name:";
-            this.lName.Click += new System.EventHandler(this.userName_Click);
+            this.textBox4.Location = new System.Drawing.Point(116, 281);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(179, 20);
+            this.textBox4.TabIndex = 9;
             // 
-            // fName
+            // textBox3
             // 
-            this.fName.AutoSize = true;
-            this.fName.Location = new System.Drawing.Point(50, 177);
-            this.fName.Name = "fName";
-            this.fName.Size = new System.Drawing.Size(60, 13);
-            this.fName.TabIndex = 3;
-            this.fName.Text = "First Name:";
+            this.textBox3.Location = new System.Drawing.Point(116, 227);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(179, 20);
+            this.textBox3.TabIndex = 8;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // phone
+            // textBox2
             // 
-            this.phone.AutoSize = true;
-            this.phone.Location = new System.Drawing.Point(58, 230);
-            this.phone.Name = "phone";
-            this.phone.Size = new System.Drawing.Size(47, 13);
-            this.phone.TabIndex = 4;
-            this.phone.Text = "Contact:";
+            this.textBox2.Location = new System.Drawing.Point(116, 174);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 7;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(116, 149);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 6;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // email
             // 
@@ -137,35 +139,33 @@
             this.email.TabIndex = 5;
             this.email.Text = "Email:";
             // 
-            // textBox1
+            // phone
             // 
-            this.textBox1.Location = new System.Drawing.Point(116, 149);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.phone.AutoSize = true;
+            this.phone.Location = new System.Drawing.Point(58, 230);
+            this.phone.Name = "phone";
+            this.phone.Size = new System.Drawing.Size(47, 13);
+            this.phone.TabIndex = 4;
+            this.phone.Text = "Contact:";
             // 
-            // textBox2
+            // fName
             // 
-            this.textBox2.Location = new System.Drawing.Point(116, 174);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 7;
+            this.fName.AutoSize = true;
+            this.fName.Location = new System.Drawing.Point(50, 177);
+            this.fName.Name = "fName";
+            this.fName.Size = new System.Drawing.Size(60, 13);
+            this.fName.TabIndex = 3;
+            this.fName.Text = "First Name:";
             // 
-            // textBox3
+            // lName
             // 
-            this.textBox3.Location = new System.Drawing.Point(116, 227);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(179, 20);
-            this.textBox3.TabIndex = 8;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(116, 281);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(179, 20);
-            this.textBox4.TabIndex = 9;
+            this.lName.AutoSize = true;
+            this.lName.Location = new System.Drawing.Point(49, 152);
+            this.lName.Name = "lName";
+            this.lName.Size = new System.Drawing.Size(61, 13);
+            this.lName.TabIndex = 2;
+            this.lName.Text = "Last Name:";
+            this.lName.Click += new System.EventHandler(this.userName_Click);
             // 
             // comboBox1
             // 

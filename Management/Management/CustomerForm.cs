@@ -102,18 +102,34 @@ namespace Management
                 return;
             }
 
+            //FIlePath
+            string filePath = "Customer.customers.txt";
+
+            //Retrive customer datas
+            cusData cusData = new cusData();
+
+
+            //Get id
+            int uniqueID = Customer.IdUnique(cusData.GetCustomer(filePath));
+
             //Creates a constructore with the data on the box.
-            Customer customer = new Customer(lname, fname, phoneFix, email);
+            Customer customer = new Customer(uniqueID, lname, fname, phoneFix, email);
 
             //Saves the new customer to SavedList.
             Savelist.Add(customer);
 
             //Save user data to file
-            string filePath = "Customer.txt";
-            customer.SaveCustomData(filePath, Savelist);
+            customer.AppendData(filePath, Savelist);
 
             //Gives user a notification of data being saved.
             MessageBox.Show("Data saved");
+
+            //Remove the text on the textbox
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+
         }
 
     }
