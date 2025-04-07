@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,6 +28,13 @@ namespace Management
 
             //Close this form
             this.Close();
+        }
+
+        private void EquipmentForm_Load(object sender, EventArgs e)
+        {
+            //String path for Category
+            string filepath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Category\category.txt");
+
         }
     }
 }

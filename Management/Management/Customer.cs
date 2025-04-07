@@ -58,7 +58,7 @@ namespace Management
 
 
         //--------------------------------------------------------------------
-        //Check if Id us unique 
+        //Check if Id is unique 
         public static int IdUnique(List<Customer> customers)
         {
             int startId = 1000;
@@ -77,7 +77,7 @@ namespace Management
 
 
         //--------------------------------------------------------------------
-        //Get customer
+        //Get customer, list of all customer.
         public static List<Customer> GetCustomer(string filePath)
         {
             List<Customer> customer = new List<Customer>();
@@ -137,6 +137,7 @@ namespace Management
         }
 
         //--------------------------------------------------------------------
+        //Get customer id
         public List<int> getCusID(List<Customer> customers)
         {
             return new HashSet<int>(customers.Select(c => c.Id)).ToList();

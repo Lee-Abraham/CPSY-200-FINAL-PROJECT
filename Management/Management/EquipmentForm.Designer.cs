@@ -49,6 +49,7 @@
             this.Controls.Add(this.Home);
             this.Name = "EquipmentForm";
             this.Text = "EquipmentForm";
+            this.Load += new System.EventHandler(this.EquipmentForm_Load);
             this.ResumeLayout(false);
 
         }
