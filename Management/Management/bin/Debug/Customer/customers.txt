@@ -1,5 +1,5 @@
-1001,  Lee,  Abraham,  2333232123,  leebello@gmail.com
-1002,   Santi,   Akazam,   2123212311,   oo@gmail.com
-1003,    Char,    YOYO,    6547658654,    gagi@gmail.com
+1001, Lee, Abraham, 2333232123, leebello@gmail.com
+1002, Santi, Akazam, 2123212311, oo@gmail.com
+1003, Char, YOYO, 6547658654, gagi@gmail.com
 1004, Abigail, Santino, 8322123211, abigail@gmail.com
-1005,  daw,  da,  3213213211,  333@gmail.com
+1005, daw, da, 3213213211, 333@gmail.com

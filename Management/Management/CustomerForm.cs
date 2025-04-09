@@ -18,6 +18,18 @@ namespace Management
         {
             InitializeComponent();
             string filePath = @"Customer\customers.txt";
+
+            //Load customer data
+            List<Customer> Custlist = Customer.GetCustomer(filePath);
+
+            //Bind customer to data grid view
+            dataGridView1.DataSource = Custlist;
+
+            //Organize data
+            CustomizeCustomerHeaders();
+
+            //Hide the data panel.
+            panel3.Hide();
         }
 
 
@@ -248,6 +260,29 @@ namespace Management
             }
         }
 
-       
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            panel3.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            panel3.Hide();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void CustomizeCustomerHeaders()
+        {
+            // Change column headers
+            dataGridView1.Columns["Id"].HeaderText = "Customer ID";
+            dataGridView1.Columns["Fname"].HeaderText = "First Name";
+            dataGridView1.Columns["Lname"].HeaderText = "Last Name";
+            dataGridView1.Columns["Phone"].HeaderText = "Phone Number";
+            dataGridView1.Columns["Email"].HeaderText = "Email Address";
+        }
     }
 }

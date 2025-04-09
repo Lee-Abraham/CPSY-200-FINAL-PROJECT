@@ -46,7 +46,7 @@
             // buttCustomer
             // 
             this.buttCustomer.BackColor = System.Drawing.Color.White;
-            this.buttCustomer.Location = new System.Drawing.Point(307, 103);
+            this.buttCustomer.Location = new System.Drawing.Point(307, 120);
             this.buttCustomer.Margin = new System.Windows.Forms.Padding(2);
             this.buttCustomer.Name = "buttCustomer";
             this.buttCustomer.Size = new System.Drawing.Size(136, 30);
@@ -57,7 +57,7 @@
             // 
             // buttEquipment
             // 
-            this.buttEquipment.Location = new System.Drawing.Point(307, 214);
+            this.buttEquipment.Location = new System.Drawing.Point(307, 267);
             this.buttEquipment.Margin = new System.Windows.Forms.Padding(2);
             this.buttEquipment.Name = "buttEquipment";
             this.buttEquipment.Size = new System.Drawing.Size(136, 30);
@@ -68,7 +68,7 @@
             // 
             // buttRent
             // 
-            this.buttRent.Location = new System.Drawing.Point(307, 334);
+            this.buttRent.Location = new System.Drawing.Point(307, 414);
             this.buttRent.Margin = new System.Windows.Forms.Padding(2);
             this.buttRent.Name = "buttRent";
             this.buttRent.Size = new System.Drawing.Size(136, 30);
@@ -111,9 +111,9 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Management.Properties.Resources.renting;
-            this.pictureBox3.Location = new System.Drawing.Point(117, 309);
+            this.pictureBox3.Location = new System.Drawing.Point(117, 373);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 76);
+            this.pictureBox3.Size = new System.Drawing.Size(126, 107);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
@@ -122,9 +122,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Management.Properties.Resources.equipment;
-            this.pictureBox2.Location = new System.Drawing.Point(117, 191);
+            this.pictureBox2.Location = new System.Drawing.Point(117, 223);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 76);
+            this.pictureBox2.Size = new System.Drawing.Size(126, 107);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
@@ -137,7 +137,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(117, 78);
             this.pictureBox1.MinimumSize = new System.Drawing.Size(100, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 76);
+            this.pictureBox1.Size = new System.Drawing.Size(126, 107);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;

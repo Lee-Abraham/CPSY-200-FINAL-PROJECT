@@ -11,10 +11,10 @@ namespace Management
 {
     public class category
     {
-        public int catId {  get; set; }
-        public string catName {  get; set; }
+        public int catId { get; set; }
+        public string catName { get; set; }
 
-        public category() 
+        public category()
         {
             this.catId = 0;
             this.catName = string.Empty;
@@ -58,10 +58,10 @@ namespace Management
 
         //-----------------------------------------------------------
         //Get category. ALL
-        public List<category> getCat(string filepath)
+        public static List<category> getCat(string filepath)
         {
             List<category> cat = new List<category>();
-            
+
             try
             {
                 using (StreamReader sr = new StreamReader(filepath))
@@ -110,7 +110,7 @@ namespace Management
                             int ID = int.Parse(parts[0]);
                             string name = parts[1];
                             return cat = new category(id, name);
-                            
+
                         }
                     }
                 }
@@ -121,6 +121,14 @@ namespace Management
             }
 
             return null;
+        }
+
+        //---------------------------------------------------------
+        //Get all cat ID.
+
+        public List<int> GetCatID(List<category> cat)
+        {
+            return new HashSet<int>(cat.Select(c => c.catId)).ToList();
         }
 
 

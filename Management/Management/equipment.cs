@@ -10,11 +10,11 @@ namespace Management
 {
     public class equipment
     {
-        int eqId {  get; set; }
-        int cateId { get; set; }
-        string name { get; set; }
-        string desc { get; set; }
-        float dailRate { get; set; }
+        public int eqId {  get; set; }
+        public int cateId { get; set; }
+        public string name { get; set; }
+        public string desc { get; set; }
+        public float dailRate { get; set; }
 
         public equipment()
         {
@@ -46,7 +46,7 @@ namespace Management
         //---------------------------------------------------------
         //Get all equipment.
 
-        public List<equipment> equipmentList(string filepath)
+        public static List<equipment> equipmentList(string filepath)
         {
             List<equipment> equipment = new List<equipment>();
 
@@ -86,7 +86,7 @@ namespace Management
         //---------------------------------------------------------
         //Get equipment using id.
 
-        public equipment equipmentUsingID(int ID, string filepath)
+        public static equipment equipmentUsingID(int ID, string filepath)
         {
             equipment equipment = new equipment();
 
@@ -156,8 +156,10 @@ namespace Management
         {
             try 
             { 
+                //Get all lines in the data
                 var lines = File.ReadLines(filepath).ToList();
 
+                //Change the data on file
                 lines = lines.Where(line =>
                 {
                     string[] parts = line.Split(',');
@@ -169,6 +171,9 @@ namespace Management
                     return true;
 
                 }).ToList();
+
+                //Write new data to file
+                File.WriteAllLines(filepath, lines);
             }
 
             catch(Exception ex) 
@@ -176,5 +181,37 @@ namespace Management
                 MessageBox.Show($"An error occured: {ex.Message}");
             }
         }
+
+        //---------------------------------------------------------
+        //Generate unique ID.
+
+        public static int GetUnID(List<equipment> equipmentList, int catID)
+        {
+            //Get the category number
+            int currID = catID * 100;
+
+            //appends 1 to be 101
+            int nextID = currID + 1;
+
+            //Get all existing equipment ID
+            HashSet<int> ids = new HashSet<int>(equipmentList.Where( e => e.cateId == catID).Select(e => e.eqId) );
+
+            while( ids.Contains(nextID) )
+            {
+                nextID++;
+            }
+
+            return nextID;
+        }
+
+        //---------------------------------------------------------
+        //Get all equipment ID.
+
+        public List<int> GetEqID(List<equipment> equip)
+        {
+            return new HashSet<int>(equip.Select(c => c.eqId)).ToList();
+        }
+
+
     }
 }
